@@ -8,3 +8,7 @@ social media analytics for Riot Gaming, analyzing player sentiment pre and post 
 ### [Text Preprocessing in NLP with Python codes](https://github.com/saisadhan/Social-Media-Analytics/blob/cab37945764cae015441f2c39218494b6205cb09/text_preprocessing.ipynb)
 
 This above Python script imports data from a CSV file, preprocesses each message by lowercasing, tokenizing, removing punctuation and stopwords, and lemmatizing the words. The processed text is then saved to a CSV file for further analysis. This code streamlines the initial steps of text data preparation, facilitating efficient analysis of social media content.
+
+### [Latent Dirichlet allocation codes](https://github.com/saisadhan/Social-Media-Analytics/blob/f4903a564fd7c4ccba74ec924a72520b4394cc62/Latent%20Dirichlet%20allocation.ipynb)
+
+The script utilizes Latent Dirichlet Allocation (LDA) to uncover latent topics within the extracted dataset. It imports Reddit data from a CSV file, preprocesses it, and generates a document-term matrix. Then, it applies LDA to identify topics and prints the top words associated with each topic. The script facilitates insightful analysis of social media discussions by revealing underlying themes present in the data.
