@@ -25,7 +25,7 @@ The preprocessing phase involved:
 ## Sentiment Analysis
 I employed Google BERT and Llama 2 models to conduct sentiment analysis on the preprocessed data.
 
-### BERT Model
+### [BERT Model](https://github.com/saisadhan/Social-Media-Analytics/blob/efc18a53ee44bac2e1035185dd717e004dbe0721/sentiment%20Analysis%20using%20Google%20BERT.ipynb)
 - **Training Data:** IMDB Dataset
 - **Challenges:**
 ***1. Longer Execution Time:*** Training the BERT model and obtaining predictions was time-consuming.
