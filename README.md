@@ -1,7 +1,8 @@
 # Social Media Analytics
-![Valorant](https://github.com/saisadhan/Social-Media-Analytics/blob/98fcc3791d4ab3c203d16a3a828a5ace0730f90f/valorant_banner.jpg)
 
-social media analytics for Riot Gaming, Conducted sentiment analysis on gamers' discussions from Reddit utilizing the Google BERT model, and Llama2 through LangChain. Leveraged PRAW for data extraction and applied LDA Topic Modeling to identify topics within positive and negative sentiment labels, aiming to optimize player satisfaction and retention strategies. 
+<img src="https://github.com/saisadhan/Social-Media-Analytics/blob/98fcc3791d4ab3c203d16a3a828a5ace0730f90f/valorant_banner.jpg" width="400">
+
+Social media analytics for Riot Gaming, Conducted sentiment analysis on gamers' discussions from Reddit utilizing the Google BERT model, and Llama2 through LangChain. Leveraged PRAW for data extraction and applied LDA Topic Modeling to identify topics within positive and negative sentiment labels, aiming to optimize player satisfaction and retention strategies. 
 
 ## Problem Statement
 I aimed to understand players' reactions to the new agent Clove before and after its release on March 26, 2024. The analysis was conducted by scraping Reddit comments and performing sentiment analysis to uncover player sentiments and key discussion topics.
