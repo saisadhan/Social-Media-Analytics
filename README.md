@@ -30,26 +30,29 @@ I employed Google BERT and Llama 2 models to conduct sentiment analysis on the p
 ***1. Longer Execution Time:*** Training the BERT model and obtaining predictions was time-consuming.
 ***2. Context Mismatch:*** Despite using the IMDB dataset for training, we observed some incorrect sentiment predictions during manual checks, likely due to contextual differences between movie reviews and gaming discussions.
 
-### Llama 2 Model
+### [Llama 2 Model](https://github.com/saisadhan/Social-Media-Analytics/blob/e985c4b47b9f086249da4c2733c4f73569d805ff/sentiment%20Analysis%20using%20Llama2%20via%20LangChain.ipynb)
 To overcome the above challenges, we shifted to the open-source Llama 2 model. Initially, we attempted to implement it on Google Colab, but faced issues such as the need for multiple dependencies and the requirement for a Colab Pro subscription due to high CPU utilization.
 
 I utilized Ollama to locally pull and run the Llama 2 model. However, I encountered difficulties in processing CSV files directly with Llama 2 for sentiment analysis. To resolve this, I employed ***LangChain***, a framework designed to interact with large language models (LLMs). This setup allowed me to feed data from a CSV file row by row into Llama 2 and store the sentiment predictions back into the CSV file.
 
 
-# Sentiment Comparison
+## Sentiment Comparison
 
-**Google BERT Results**
+### [Google BERT Results](https://github.com/saisadhan/Social-Media-Analytics/blob/f9b3027b7e50b0df01735149989a3d6863d0a4f9/Sentiment%20Analysis%20%2BVe%20percent_BERT.ipynb)
 
 <img src="https://github.com/saisadhan/Social-Media-Analytics/blob/06180bcee102fc670cdacc1ae02a097de767d0fd/positive%20percentage%20comparison%20before%20and%20after%20release%20using%20BERT.jpeg" width="400">
 
 
 
-**Llama 2 Results**
+### [Llama 2 Results](https://github.com/saisadhan/Social-Media-Analytics/blob/e985c4b47b9f086249da4c2733c4f73569d805ff/Sentiment%20Analysis%20%2BVe%20percent_LLM.ipynb)
 
 <img src="https://github.com/saisadhan/Social-Media-Analytics/blob/06180bcee102fc670cdacc1ae02a097de767d0fd/positive%20percentage%20comparison%20before%20and%20after%20release%20using%20Llama2.jpeg" width="400">
 
+## Results 
 
-### [Latent Dirichlet allocation Topic Modeling](https://github.com/saisadhan/Social-Media-Analytics/blob/f4903a564fd7c4ccba74ec924a72520b4394cc62/Latent%20Dirichlet%20allocation.ipynb)
+Drop in positive sentiments post-Clove release, evident in both BERT and Llama 2 analyses, **implies a mismatch between player expectations and experiences**. Identifying and addressing factors contributing to this drop is crucial for refining Clove's design and enhancing player satisfaction. Continuous feedback monitoring is essential for adapting game elements to better align with player expectations.
+
+### [Latent Dirichlet allocation Topic Modeling](https://github.com/saisadhan/Social-Media-Analytics/blob/e985c4b47b9f086249da4c2733c4f73569d805ff/Latent%20Dirichlet%20allocation%20Topic%20Modeling.ipynb)
 
 I used Latent Dirichlet Allocation (LDA) to identify topics within different sentiment groups (positive and negative) before and after Clove's release.
 
@@ -101,5 +104,5 @@ I used Latent Dirichlet Allocation (LDA) to identify topics within different sen
 The analysis provided valuable insights into player sentiments and discussions surrounding the new agent Clove, which can help Riot Games improve player satisfaction and retention strategies. The consistent themes and evolving discussions indicate areas for future focus and enhancement.
 
 
-## [View Full Presentation](https://github.com/yourusername/valorant-analytics/blob/main/Team2_Valorant.pptx)
+## [View Full Presentation](https://github.com/saisadhan/Social-Media-Analytics/blob/727fef3061d14bd84446eaa87df2f2015ae7507e/Team2_Valorant.pdf)
 
