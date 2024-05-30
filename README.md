@@ -26,14 +26,31 @@ I employed Google BERT and Llama 2 models to conduct sentiment analysis on the p
 
 ### BERT Model
 - **Training Data:** IMDB Dataset
-- **Challenges:** Longer execution time and context mismatch
+- **Challenges:**
+***1. Longer Execution Time:*** Training the BERT model and obtaining predictions was time-consuming.
+***2. Context Mismatch:*** Despite using the IMDB dataset for training, we observed some incorrect sentiment predictions during manual checks, likely due to contextual differences between movie reviews and gaming discussions.
 
 ### Llama 2 Model
-- **Setup:** Ollama and LangChain
-- **Challenges:** High CPU utilization and model download issues
+To overcome the above challenges, we shifted to the open-source Llama 2 model. Initially, we attempted to implement it on Google Colab, but faced issues such as the need for multiple dependencies and the requirement for a Colab Pro subscription due to high CPU utilization.
+
+I utilized Ollama to locally pull and run the Llama 2 model. However, I encountered difficulties in processing CSV files directly with Llama 2 for sentiment analysis. To resolve this, I employed ***LangChain***, a framework designed to interact with large language models (LLMs). This setup allowed me to feed data from a CSV file row by row into Llama 2 and store the sentiment predictions back into the CSV file.
 
 
-### [Latent Dirichlet allocation Topic Modelling](https://github.com/saisadhan/Social-Media-Analytics/blob/f4903a564fd7c4ccba74ec924a72520b4394cc62/Latent%20Dirichlet%20allocation.ipynb)
+# Sentiment Comparison
+
+**Google BERT Results**
+
+<img src="https://github.com/saisadhan/Social-Media-Analytics/blob/06180bcee102fc670cdacc1ae02a097de767d0fd/positive%20percentage%20comparison%20before%20and%20after%20release%20using%20BERT.jpeg" width="400">
+
+
+
+**Llama 2 Results**
+
+<img src="https://github.com/saisadhan/Social-Media-Analytics/blob/06180bcee102fc670cdacc1ae02a097de767d0fd/positive%20percentage%20comparison%20before%20and%20after%20release%20using%20Llama2.jpeg" width="400">
+
+
+### [Latent Dirichlet allocation Topic Modeling](https://github.com/saisadhan/Social-Media-Analytics/blob/f4903a564fd7c4ccba74ec924a72520b4394cc62/Latent%20Dirichlet%20allocation.ipynb)
+
 I used Latent Dirichlet Allocation (LDA) to identify topics within different sentiment groups (positive and negative) before and after Clove's release.
 
 ## Insights
